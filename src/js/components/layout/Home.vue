@@ -3,14 +3,11 @@
 
         <div class="hero-body columns is-centered">
             <div class="column is-5 is-10-mobile">
-                <h1 class="is-hidden">
-                    Base Hairdressing
+                <h1 class="title is-2 has-text-primary has-text-centered">
+                    Contra Design
                 </h1>
-                <figure class="image">
-                    <img src="dist/img/base_logo.svg" alt="Base Hairdressing">
-                </figure>
                 <h2 class="subtitle is-size-4 has-text-white has-text-centered">
-                    A hair academy for the next generation of super skilled stylists
+                    Web Design
                 </h2>
             </div>
         </div>
