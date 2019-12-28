@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{block "meta" .}}
+        <meta property="og:title" content="Introducing Base Hairdressing">
+        <meta property="og:description" content="Base Hairdressing is a training academy for the next generation of super skilled stylists">
+        <meta property="og:image" content="dist/img/fb_meta/home.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="628">
+        <meta property="og:url" content="https://www.basehairdressing.com">
+
+        <title>Base Hairdressing - Hairdressers in Warrington</title>
+    {{end}}
+
+    <link rel="stylesheet" href="/dist/app.css?id=2">
+    <link rel="stylesheet" href="https://use.typekit.net/uyj6eus.css">
+</head>
+<body>
+<div>
+    <div id="appSeo">
+        {{template "content" .}}
+    </div>
+</div>
+
+<script src="/dist/app.js?id=4"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2C3HB6BGV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N2C3HB6BGV');
+</script>
+</body>
+</html>

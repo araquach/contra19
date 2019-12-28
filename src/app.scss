@@ -1,0 +1,140 @@
+// $primary: #333;
+$navbar-item-color: #FFF;
+$navbar-item-hover-background-color: rgba(25,25,25,.7);
+$navbar-dropdown-background-color: rgba(25,25,25,.7);
+
+$card-background-color: rgba(0,0,0,0.8);
+$card-shadow: 0 0 1px 0 rgb(255,255,255);
+
+$lightest-grey: #dce2f2;
+$light-grey: #99aabf;
+$light-arctic: #6d808c;
+$dark-arctic: #425559;
+$darkest-arctic: #0d0d0d;
+
+@import "node_modules/bulma/bulma.sass";
+@import "~buefy/src/scss/buefy";
+
+li {
+  line-height: 1.5rem;
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
+.navbar {
+  background: transparent;
+}
+
+a.navbar-burger {
+  &:hover {
+      color: #FFF;
+    background-color: rgba(10,10,10,.5);
+  }
+  background-color: rgba(10,10,10,.5);
+}
+
+.navbar-menu {
+  @include until($desktop) {
+    background-color: rgba(10,10,10,.5);
+
+    .navbar-dropdown {
+      a.navbar-item {
+        font-size: 1rem;
+      }
+    }
+
+    a.navbar-item {
+      padding-left: 0.75rem;
+
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+}
+
+strong {
+  color: currentColor;
+  font-weight: bolder;
+}
+
+.hero.is-fullheight .hero-body.show {
+  align-items: flex-end;
+  h1 {
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.columns:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+html {
+  background-color: black;
+}
+
+h1, h2 {
+  font-family: itc-american-typewriter, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section.section {
+  @include from($tablet) {
+    padding: 6rem 4rem 4rem 4rem;
+  }
+}
+
+#home {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+  background-size: cover;
+
+  figure {
+    margin-bottom: 3rem;
+  }
+}
+
+.about {
+    background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+    background-size: cover;
+}
+
+.about-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.contact-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+/* transition styling */
+
+.fade-enter, .fade-leave-active {
+   opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .15s;
+}
