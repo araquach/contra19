@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="hero is-fullheight">
+    <section id="home" class="hero is-large">
 
         <div class="hero-body columns is-centered">
             <div class="column is-5 is-10-mobile">
