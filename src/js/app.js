@@ -6,6 +6,7 @@ import NavbarSeo from './components/layout/NavbarSeo'
 import Home from './components/layout/Home'
 import Bespoke from "./components/bespoke/Bespoke"
 import Database from "./components/database/Database"
+import Packages from "./components/packages/Packages"
 import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
@@ -19,9 +20,10 @@ Vue.use(Vuelidate)
 Vue.component('navbar-component', Navbar)
 Vue.component('navbar-seo-component', NavbarSeo)
 Vue.component('cookie-component', Cookie)
+Vue.component('home-component', Home)
 Vue.component('bespoke-component', Bespoke)
 Vue.component('database-component', Database)
-Vue.component('home-component', Home)
+Vue.component('packages-component', Packages)
 Vue.component('contact-component', Contact)
 
 window.axios = require('axios');
