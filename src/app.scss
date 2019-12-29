@@ -17,7 +17,7 @@ $darkest-arctic: #0d0d0d;
 
 
 .hero {
-  margin-bottom: -5rem;
+  margin-bottom: -4rem;
   clip-path: polygon(0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%, 0% 0%);
 }
 
@@ -107,7 +107,7 @@ section.section {
 }
 
 #home {
-  background: url("/dist/img/bgrounds/home.png") center center no-repeat;
+  background: url("/dist/img/bgrounds/home.png") center top no-repeat;
   background-color: red;
   background-size: cover;
 
@@ -128,7 +128,7 @@ section.section {
 }
 
 .database {
-  background: url("/dist/img/bgrounds/") center top no-repeat;
+  background: url("/dist/img/bgrounds/database.png") center top no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -141,7 +141,7 @@ section.section {
 }
 
 .bespoke {
-  background: url("/dist/img/bgrounds/") center top no-repeat;
+  background: url("/dist/img/bgrounds/bespoke.png") center top no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -167,7 +167,7 @@ section.section {
 }
 
 .packages {
-  background: url("/dist/img/bgrounds/") center top no-repeat;
+  background: url("/dist/img/bgrounds/prices.png") center top no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -180,7 +180,7 @@ section.section {
 }
 
 .contact {
-  background: url("/dist/img/bgrounds/") center top no-repeat;
+  background: url("/dist/img/bgrounds/contact.png") center top no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
