@@ -1,5 +1,5 @@
 <template>
-    <section id="packages" class="packages hero is-large is-dark">
+    <section id="packages" class="packages hero is-large">
         <div class="hero-body show columns">
             <div class="section column is-5">
                 <h1 class="title">Packages Suited for everyone</h1>

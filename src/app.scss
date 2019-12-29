@@ -101,7 +101,8 @@ section.section {
 }
 
 #home {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/") center center no-repeat;
+  background-color: #6d808c;
   background-size: cover;
 
   figure {
@@ -109,23 +110,70 @@ section.section {
   }
 }
 
-.about {
-    background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
-    background-size: cover;
+.social {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-color: aquamarine;
+  background-size: cover;
 }
 
-.about-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+.social-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background-size: cover;
+}
+
+.database {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-color: #425559;
+  background-size: cover;
+}
+
+.database-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background-color: darkcyan;
+  background-size: cover;
+}
+
+.bespoke {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-color: indigo;
+  background-size: cover;
+}
+
+.bespoke-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background-size: cover;
+}
+
+.seo {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-color: #99aabf;
+  background-size: cover;
+}
+
+.seo-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background-size: cover;
+}
+
+.packages {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-color: slateblue;
+  background-size: cover;
+}
+
+.packages-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
   background-size: cover;
 }
 
 .contact {
   background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-color: #425559;
   background-size: cover;
 }
 
 .contact-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
   background-size: cover;
 }
 

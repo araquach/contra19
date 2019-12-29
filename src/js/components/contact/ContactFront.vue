@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="contact hero is-large is-dark">
+    <section id="contact" class="contact hero is-large">
         <div class="hero-body show columns">
             <div class="section column is-5">
                 <h1 class="title">Location & Contact Info</h1>

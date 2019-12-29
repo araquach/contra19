@@ -6,16 +6,22 @@
             </b-navbar-item>
         </template>
         <template slot="start">
-            <b-navbar-item href="#" v-scroll-to="'#home'">
-                Home
+            <b-navbar-item href="#social" v-scroll-to="'#social'">
+                Social Media
+            </b-navbar-item>
+            <b-navbar-item href="#database" v-scroll-to="'#database'">
+                Database Driven
             </b-navbar-item>
             <b-navbar-dropdown label="More">
-                <b-navbar-item href="#" v-scroll-to="'#'">
-                    Random
+                <b-navbar-item href="#bespoke" v-scroll-to="'#bespoke'">
+                    Bespoke Design
+                </b-navbar-item>
+                <b-navbar-item href="#seo" v-scroll-to="'#seo'">
+                    SEO
                 </b-navbar-item>
                 <hr class="navbar-divider">
-                <b-navbar-item href="#" v-scroll-to="'#'">
-                    Model Register
+                <b-navbar-item href="#packages" v-scroll-to="'#packages'">
+                    Package Prices
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>

@@ -1,5 +1,5 @@
 <template>
-    <section id="seo" class="seo hero is-large is-dark">
+    <section id="seo" class="seo hero is-large">
         <div class="hero-body show columns">
             <div class="section column is-5">
                 <h1 class="title">Search Engine Optimised</h1>
