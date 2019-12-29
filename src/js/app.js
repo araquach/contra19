@@ -4,7 +4,8 @@ import Cookie from './components/Cookie'
 import Navbar from './components/layout/Navbar'
 import NavbarSeo from './components/layout/NavbarSeo'
 import Home from './components/layout/Home'
-import Bespoke from "./components/bespoke/Bespoke";
+import Bespoke from "./components/bespoke/Bespoke"
+import Database from "./components/database/Database"
 import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
@@ -19,6 +20,7 @@ Vue.component('navbar-component', Navbar)
 Vue.component('navbar-seo-component', NavbarSeo)
 Vue.component('cookie-component', Cookie)
 Vue.component('bespoke-component', Bespoke)
+Vue.component('database-component', Database)
 Vue.component('home-component', Home)
 Vue.component('contact-component', Contact)
 
