@@ -8,6 +8,7 @@ import Bespoke from "./components/bespoke/Bespoke"
 import Database from "./components/database/Database"
 import Packages from "./components/packages/Packages"
 import Seo from "./components/seo/Seo"
+import Social from "./components/social/Social";
 import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
@@ -26,6 +27,7 @@ Vue.component('bespoke-component', Bespoke)
 Vue.component('database-component', Database)
 Vue.component('packages-component', Packages)
 Vue.component('seo-component', Seo)
+Vue.component('social-component', Social)
 Vue.component('contact-component', Contact)
 
 window.axios = require('axios');

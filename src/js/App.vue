@@ -2,6 +2,7 @@
     <div>
         <navbar-component/>
         <home-component/>
+        <social-component/>
         <database-component/>
         <bespoke-component/>
         <seo-component/>
@@ -11,9 +12,5 @@
 </template>
 
 <script>
-    import Packages from "./components/packages/Packages";
-    import Seo from "./components/seo/Seo";
-    export default {
-        components: {Seo, Packages}
-    }
+
 </script>
