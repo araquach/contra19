@@ -3,7 +3,7 @@ import App from './App.vue'
 import Cookie from './components/Cookie'
 import Navbar from './components/layout/Navbar'
 import NavbarSeo from './components/layout/NavbarSeo'
-import Home from './components/layout/Home'
+import Responsive from './components/responsive/Responsive'
 import Bespoke from "./components/bespoke/Bespoke"
 import Database from "./components/database/Database"
 import Packages from "./components/packages/Packages"
@@ -22,7 +22,7 @@ Vue.use(Vuelidate)
 Vue.component('navbar-component', Navbar)
 Vue.component('navbar-seo-component', NavbarSeo)
 Vue.component('cookie-component', Cookie)
-Vue.component('home-component', Home)
+Vue.component('responsive-component', Responsive)
 Vue.component('bespoke-component', Bespoke)
 Vue.component('database-component', Database)
 Vue.component('packages-component', Packages)

@@ -17890,14 +17890,15 @@ p {
   }
 }
 
-#home {
+.responsive {
   background: url("/dist/img/bgrounds/responsive.png") center top no-repeat;
-  background-color: red;
   background-size: cover;
 }
 
-#home figure {
-  margin-bottom: 3rem;
+.responsive-info {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background-size: cover;
 }
 
 .social {

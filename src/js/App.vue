@@ -1,7 +1,7 @@
 <template>
     <div>
         <navbar-component/>
-        <home-component/>
+        <responsive-component/>
         <social-component/>
         <database-component/>
         <bespoke-component/>
