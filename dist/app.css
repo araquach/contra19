@@ -17813,10 +17813,6 @@ li {
   margin-left: 1rem;
 }
 
-.navbar {
-  background: transparent;
-}
-
 a.navbar-burger {
   background-color: rgba(10, 10, 10, 0.5);
 }
@@ -17895,7 +17891,7 @@ p {
 }
 
 #home {
-  background: url("/dist/img/bgrounds/home.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/responsive.png") center top no-repeat;
   background-color: red;
   background-size: cover;
 }
@@ -17968,7 +17964,7 @@ p {
 }
 
 .packages {
-  background: url("/dist/img/bgrounds/prices.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/packages.png") center top no-repeat;
   background-size: cover;
 }
 

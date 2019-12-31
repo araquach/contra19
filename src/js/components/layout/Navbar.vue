@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="is-fixed-top is-spaced">
+    <b-navbar class="is-fixed-top is-spaced is-primary">
         <template slot="brand">
             <b-navbar-item href="#" v-scroll-to="'#home'">
                 <img src="/dist/img/contra-logo.svg" width="100" alt="Contra Design">
