@@ -3,6 +3,8 @@ $navbar-item-color: #FFF;
 $navbar-item-hover-background-color: rgba(25,25,25,.7);
 $navbar-dropdown-background-color: rgba(25,25,25,.7);
 
+
+
 $card-background-color: rgba(0,0,0,0.8);
 $card-shadow: 0 0 1px 0 rgb(255,255,255);
 
@@ -87,7 +89,7 @@ html {
 }
 
 h1, h2 {
-  font-family: itc-american-typewriter, serif;
+  font-family: cooper-black-std, serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -103,12 +105,12 @@ section.section {
 }
 
 .responsive {
-  background: url("/dist/img/bgrounds/responsive.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/responsive.png") center center no-repeat;
   background-size: cover;
 }
 
 .responsive-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
@@ -124,7 +126,7 @@ section.section {
 }
 
 .database {
-  background: url("/dist/img/bgrounds/database.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/database.png") center center no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -132,12 +134,12 @@ section.section {
 }
 
 .database-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
 .bespoke {
-  background: url("/dist/img/bgrounds/bespoke.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/bespoke.png") center center no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -145,12 +147,12 @@ section.section {
 }
 
 .bespoke-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
 .seo {
-  background: url("/dist/img/bgrounds/seo.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/seo.png") center center no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -158,12 +160,12 @@ section.section {
 }
 
 .seo-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
 .packages {
-  background: url("/dist/img/bgrounds/packages.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/packages.png") center center no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -171,12 +173,12 @@ section.section {
 }
 
 .packages-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
 .contact {
-  background: url("/dist/img/bgrounds/contact.png") center top no-repeat;
+  background: url("/dist/img/bgrounds/contact.png") center center no-repeat;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -184,7 +186,7 @@ section.section {
 }
 
 .contact-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 

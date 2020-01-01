@@ -1,11 +1,12 @@
 <template>
     <b-navbar class="is-fixed-top is-spaced is-primary">
         <template slot="brand">
-            <b-navbar-item href="#" v-scroll-to="'#home'">
-                <img src="/dist/img/contra-logo.svg" width="100" alt="Contra Design">
-            </b-navbar-item>
+            <img src="/dist/img/contra-logo.svg" width="150" alt="Contra Design">
         </template>
         <template slot="start">
+            <b-navbar-item href="#responsive" v-scroll-to="'#responsive'">
+                Home
+            </b-navbar-item>
             <b-navbar-item href="#social" v-scroll-to="'#social'">
                 Social Media
             </b-navbar-item>
