@@ -3,8 +3,6 @@ $navbar-item-color: #FFF;
 $navbar-item-hover-background-color: rgba(25,25,25,.7);
 $navbar-dropdown-background-color: rgba(25,25,25,.7);
 
-
-
 $card-background-color: rgba(0,0,0,0.8);
 $card-shadow: 0 0 1px 0 rgb(255,255,255);
 
@@ -27,6 +25,10 @@ li {
   line-height: 1.5rem;
   list-style-type: square;
   margin-left: 1rem;
+}
+
+.navbar {
+  background-color: #425559;
 }
 
 a.navbar-burger {
@@ -128,9 +130,6 @@ section.section {
 .database {
   background: url("/dist/img/bgrounds/database.png") center center no-repeat;
   background-size: cover;
-  p, h1, h2 {
-    color: #FFF;
-  }
 }
 
 .database-info {
@@ -154,9 +153,6 @@ section.section {
 .seo {
   background: url("/dist/img/bgrounds/seo.png") center center no-repeat;
   background-size: cover;
-  p, h1, h2 {
-    color: #FFF;
-  }
 }
 
 .seo-info {
