@@ -3,20 +3,23 @@ import App from './App.vue'
 import Cookie from './components/Cookie'
 import Navbar from './components/layout/Navbar'
 import NavbarSeo from './components/layout/NavbarSeo'
-import Responsive from './components/responsive/Responsive'
-import Bespoke from "./components/bespoke/Bespoke"
-import Database from "./components/database/Database"
-import Packages from "./components/packages/Packages"
-import Seo from "./components/seo/Seo"
-import Social from "./components/social/Social";
-import Contact from './components/contact/Contact'
+import Responsive from './components/Responsive'
+import Bespoke from "./components/Bespoke"
+import Database from "./components/Database"
+import Packages from "./components/Packages"
+import Seo from "./components/Seo"
+import Social from "./components/Social";
+import Contact from './components/Contact'
 
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
 import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
-Vue.use(VueScrollTo)
+Vue.use(VueScrollTo, {
+    offset: -250
+})
+
 Vue.use(Vuelidate)
 
 Vue.component('navbar-component', Navbar)

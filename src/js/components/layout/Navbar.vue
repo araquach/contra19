@@ -1,7 +1,7 @@
 <template>
     <b-navbar class="is-fixed-top is-spaced">
         <template slot="brand">
-            <img src="/dist/img/contra-logo.svg" width="150" alt="Contra Design">
+            <img src="/dist/img/contra-logo.svg" width="130" alt="Contra Design">
         </template>
         <template slot="start">
             <b-navbar-item href="#responsive" v-scroll-to="'#responsive'">

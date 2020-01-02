@@ -1,16 +1,21 @@
 // $primary: #333;
 $navbar-item-color: #FFF;
-$navbar-item-hover-background-color: rgba(25,25,25,.7);
-$navbar-dropdown-background-color: rgba(25,25,25,.7);
+$navbar-item-hover-background-color: rgba(66, 85, 89,.7);
+$navbar-dropdown-background-color: rgba(66, 85, 89,.7);
 
 $card-background-color: rgba(0,0,0,0.8);
 $card-shadow: 0 0 1px 0 rgb(255,255,255);
 
-$lightest-grey: #dce2f2;
+$primary: #425559;
 $light-grey: #99aabf;
-$light-arctic: #6d808c;
-$dark-arctic: #425559;
-$darkest-arctic: #0d0d0d;
+$mustard: rgb(195, 181, 121);
+$seagreen: rgb(131, 167, 155);
+$orange: rgb(240, 176, 0);
+$coffee: rgb(44, 35, 28);
+$skyblue: rgb(81, 108, 131);
+$terracotta: rgb(234,76, 88);
+$midbrown: rgb(75, 66, 58);
+
 
 @import "node_modules/bulma/bulma.sass";
 @import "~buefy/src/scss/buefy";
@@ -19,6 +24,17 @@ $darkest-arctic: #0d0d0d;
 .hero {
   margin-bottom: -4rem;
   clip-path: polygon(0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%, 0% 0%);
+  .section {
+    .button {
+      border-color: transparent;
+      &:hover {
+        opacity: .7;
+      }
+    }
+    @include from($desktop) {
+      padding: 3rem 8rem;
+    }
+  }
 }
 
 li {
@@ -28,7 +44,11 @@ li {
 }
 
 .navbar {
-  background-color: #425559;
+  background-color: $primary;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
 }
 
 a.navbar-burger {
@@ -51,7 +71,6 @@ a.navbar-burger {
 
     a.navbar-item {
       padding-left: 0.75rem;
-
       &:hover {
         color: #FFF;
       }
@@ -107,8 +126,16 @@ section.section {
 }
 
 .responsive {
-  background: url("/dist/img/bgrounds/responsive.png") center center no-repeat;
+  background: url("/dist/img/bgrounds/responsive2-01.png") center center no-repeat;
   background-size: cover;
+  p, h1, h2 {
+    color: $primary;
+  }
+
+  .button {
+    background-color: $primary;
+    color: #fff;
+  }
 }
 
 .responsive-info {
@@ -117,19 +144,34 @@ section.section {
 }
 
 .social {
-  background: url("/dist/img/bgrounds/social.png") center top no-repeat;
-  background-color: none;
+  background: url("/dist/img/bgrounds/social.png") center center no-repeat;
   background-size: cover;
+  p, h1, h2 {
+    color: $midbrown;
+  }
+
+  .button {
+    background-color: $midbrown;
+    color: #fff;
+  }
 }
 
 .social-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
   background-size: cover;
 }
 
 .database {
   background: url("/dist/img/bgrounds/database.png") center center no-repeat;
   background-size: cover;
+  p, h1, h2 {
+    color: $dark;
+  }
+
+  .button {
+    background-color: $dark;
+    color: #fff;
+  }
 }
 
 .database-info {
@@ -143,6 +185,11 @@ section.section {
   p, h1, h2 {
     color: #FFF;
   }
+
+  .button {
+    background-color: $white;
+    color: $primary;
+   }
 }
 
 .bespoke-info {
@@ -153,6 +200,14 @@ section.section {
 .seo {
   background: url("/dist/img/bgrounds/seo.png") center center no-repeat;
   background-size: cover;
+  p, h1, h2 {
+    color: $coffee;
+  }
+
+  .button {
+    background-color: $coffee;
+    color: #fff;
+  }
 }
 
 .seo-info {
@@ -166,6 +221,11 @@ section.section {
   p, h1, h2 {
     color: #FFF;
   }
+
+  .button {
+    background-color: $white;
+    color: $skyblue;
+  }
 }
 
 .packages-info {
@@ -175,9 +235,15 @@ section.section {
 
 .contact {
   background: url("/dist/img/bgrounds/contact.png") center center no-repeat;
+  background-color: $light-grey;
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
+  }
+
+  .button {
+    background-color: $primary;
+    color: #fff;
   }
 }
 
