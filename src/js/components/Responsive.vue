@@ -8,7 +8,7 @@
                 <p>Whether its a simple on-line brochure or a complex web application your looking for, you can be confident to get a great looking, user friendly, responsive site that will work across all platforms.</p>
                 <p><strong>Find out about responsive design here</strong></p>
                 <div class="has-text-right">
-                    <button @click="switchComponent" class="button">More info</button>
+                    <button class="button">More info</button>
                 </div>
             </div>
         </div>

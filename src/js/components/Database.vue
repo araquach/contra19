@@ -7,7 +7,7 @@
                 <p>Whether it's storing potential clients details for marketing campaigns, online surveys or price calculators.</p>
                 <p><strong>See some ideas of what Contra can do for your site</strong></p>
                 <div class="has-text-left">
-                    <button @click="switchComponent" class="button">More info</button>
+                    <button class="button">More info</button>
                 </div>
             </div>
         </div>

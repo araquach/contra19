@@ -3,7 +3,7 @@
         <div class="hero-body show columns">
             <div class="section column is-5">
                 <h1 class="title is-1">Get in touch</h1>
-                <button @click="switchComponent" class="button">Info Here</button>
+                <button class="button">Info Here</button>
             </div>
         </div>
     </section>

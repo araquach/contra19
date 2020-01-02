@@ -8,7 +8,7 @@
                 <p>Not only are Contra sites search engine optimised, but Facebook and Twitter Open Graph integration is part of all package prices as standard!</p>
                 <p><strong>Find out more about SEO here</strong></p>
                 <div class="has-text-right">
-                    <button @click="switchComponent" class="button">More info</button>
+                    <button class="button">More info</button>
                 </div>
             </div>
         </div>
