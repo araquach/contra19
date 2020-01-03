@@ -16,8 +16,9 @@ import VueScrollTo from 'vue-scrollto'
 import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
+
 Vue.use(VueScrollTo, {
-    offset: -250
+    offset: -50
 })
 
 Vue.use(Vuelidate)
