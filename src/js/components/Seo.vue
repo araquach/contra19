@@ -4,9 +4,9 @@
             <div class="column"></div>
             <div class="section column is-7">
                 <h1 class="title is-1">Search Engine Optimised</h1>
-                <p class="is-size-5">All Contra sites are optimised to be picked up by all the major search engines, increasing your chances of getting more visits and page clicks.</p>
+                <p class="is-size-4 is-family-secondary">All Contra sites are optimised to be picked up by all the major search engines, increasing your chances of getting more visits and page clicks.</p>
                 <p>Not only are Contra sites search engine optimised, but Facebook and Twitter Open Graph integration is part of all package prices as standard!</p>
-                <p><strong>Find out more about SEO here</strong></p>
+                <p class="is-size-5"><strong>Find out more about SEO here</strong></p>
                 <div class="has-text-right">
                     <button class="button">More info</button>
                 </div>

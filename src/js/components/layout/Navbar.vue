@@ -8,21 +8,21 @@
                 Home
             </b-navbar-item>
             <b-navbar-item href="#social" v-scroll-to="'#social'">
-                Social Media
+                Social
             </b-navbar-item>
             <b-navbar-item href="#database" v-scroll-to="'#database'">
-                Database Driven
+                Database
             </b-navbar-item>
             <b-navbar-dropdown label="More">
                 <b-navbar-item href="#bespoke" v-scroll-to="'#bespoke'">
-                    Bespoke Design
+                    Bespoke
                 </b-navbar-item>
                 <b-navbar-item href="#seo" v-scroll-to="'#seo'">
                     SEO
                 </b-navbar-item>
                 <hr class="navbar-divider">
                 <b-navbar-item href="#packages" v-scroll-to="'#packages'">
-                    Package Prices
+                    Prices
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>

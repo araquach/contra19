@@ -1,4 +1,4 @@
-// $primary: #333;
+$family-secondary: poynter-oldstyle-display;
 $navbar-item-color: #FFF;
 $navbar-item-hover-background-color: rgba(66, 85, 89,.7);
 $navbar-dropdown-background-color: rgba(66, 85, 89,.7);
@@ -235,14 +235,13 @@ section.section {
 
 .contact {
   background: url("/dist/img/bgrounds/contact.png") center center no-repeat;
-  background-color: $light-grey;
   background-size: cover;
   p, h1, h2 {
-    color: #FFF;
+    color: $dark;
   }
 
   .button {
-    background-color: $primary;
+    background-color: $dark;
     color: #fff;
   }
 }
