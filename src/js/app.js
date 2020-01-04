@@ -18,7 +18,7 @@ import Vuelidate from 'vuelidate'
 Vue.use(Buefy)
 
 Vue.use(VueScrollTo, {
-    offset: -50
+    offset: -window.innerHeight * .2
 })
 
 Vue.use(Vuelidate)
