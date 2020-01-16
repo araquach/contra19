@@ -17,9 +17,12 @@ import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
 
-Vue.use(VueScrollTo, {
-    offset: -window.innerHeight * .2
-})
+// Vue.use(VueScrollTo, {
+// //     offset: -window.innerHeight * .2
+// // })
+
+Vue.use(VueScrollTo)
+
 
 window.axios = require('axios')
 
