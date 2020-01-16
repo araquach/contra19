@@ -8,8 +8,8 @@ import Bespoke from "./components/Bespoke"
 import Database from "./components/Database"
 import Packages from "./components/Packages"
 import Seo from "./components/Seo"
-import Social from "./components/Social";
-import Contact from './components/Contact'
+import Social from "./components/Social"
+import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
@@ -20,6 +20,8 @@ Vue.use(Buefy)
 Vue.use(VueScrollTo, {
     offset: -window.innerHeight * .2
 })
+
+window.axios = require('axios')
 
 Vue.use(Vuelidate)
 
