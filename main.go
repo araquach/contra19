@@ -20,6 +20,7 @@ var (
 
 type ContactMessage struct {
 	Name 		string
+	Mobile		string
 	Email 		string
 	Message 	string
 }
