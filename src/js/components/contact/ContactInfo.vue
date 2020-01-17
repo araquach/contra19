@@ -2,7 +2,7 @@
     <section id="contact" class="contact hero is-large">
         <div class="hero-body show columns">
             <div class="column is-7">
-                <h1 class="title is-3">Contact Us</h1>
+                <h1 class="title is-2">Contact Us</h1>
                     <p class="is-size-5">Please fill in the form below and we'll get back to you as soon as we can</p>
                     <form v-if="submitStatus != 'OK'" @submit.prevent="submit">
                         <div class="field">

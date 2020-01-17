@@ -37,6 +37,13 @@ $midbrown: rgb(75, 66, 58);
   }
 }
 
+.hero-body {
+  @include until($tablet) {
+    padding-top: 20rem;
+    padding-bottom: 3rem;
+  }
+}
+
 li {
   line-height: 1.5rem;
   list-style-type: square;
@@ -127,6 +134,10 @@ section.section {
 
 .responsive {
   background: url("/dist/img/bgrounds/responsive2-01.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/responsive.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: $primary;
@@ -138,13 +149,12 @@ section.section {
   }
 }
 
-.responsive-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .social {
   background: url("/dist/img/bgrounds/social.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/social.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: $midbrown;
@@ -156,13 +166,12 @@ section.section {
   }
 }
 
-.social-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .database {
   background: url("/dist/img/bgrounds/database.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/database.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: $dark;
@@ -174,13 +183,12 @@ section.section {
   }
 }
 
-.database-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .bespoke {
   background: url("/dist/img/bgrounds/bespoke.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/bespoke.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -192,13 +200,12 @@ section.section {
    }
 }
 
-.bespoke-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .seo {
   background: url("/dist/img/bgrounds/seo.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/seo.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: $coffee;
@@ -210,13 +217,12 @@ section.section {
   }
 }
 
-.seo-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .packages {
   background: url("/dist/img/bgrounds/packages.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/packages.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: #FFF;
@@ -228,13 +234,12 @@ section.section {
   }
 }
 
-.packages-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/") center center no-repeat;
-  background-size: cover;
-}
-
 .contact {
   background: url("/dist/img/bgrounds/contact.png") center center no-repeat;
+  @include until($tablet) {
+    background: url("/dist/img/bgrounds/mobile/contact.png") center center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
   p, h1, h2 {
     color: $dark;
