@@ -39,8 +39,8 @@ $midbrown: rgb(75, 66, 58);
 
 .hero-body {
   @include until($tablet) {
-    padding-top: 20rem;
-    padding-bottom: 3rem;
+    padding-top: 25rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -58,12 +58,18 @@ li {
   margin-right: 3rem;
 }
 
+.navbar-item img {
+  max-height: 5rem;
+}
+
 a.navbar-burger {
   &:hover {
       color: #FFF;
     background-color: rgba(10,10,10,.5);
   }
   background-color: rgba(10,10,10,.5);
+  width: auto;
+  height: auto;
 }
 
 .navbar-menu {

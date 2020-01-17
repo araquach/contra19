@@ -7,7 +7,6 @@ import Responsive from './components/Responsive'
 import Bespoke from "./components/Bespoke"
 import Database from "./components/Database"
 import Packages from "./components/Packages"
-import Seo from "./components/Seo"
 import Social from "./components/Social"
 import Contact from './components/contact/Contact'
 
@@ -17,11 +16,9 @@ import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
 
-// Vue.use(VueScrollTo, {
-// //     offset: -window.innerHeight * .2
-// // })
-
-Vue.use(VueScrollTo)
+Vue.use(VueScrollTo, {
+     offset: -window.innerHeight * .2
+})
 
 
 window.axios = require('axios')
@@ -35,7 +32,6 @@ Vue.component('responsive-component', Responsive)
 Vue.component('bespoke-component', Bespoke)
 Vue.component('database-component', Database)
 Vue.component('packages-component', Packages)
-Vue.component('seo-component', Seo)
 Vue.component('social-component', Social)
 Vue.component('contact-component', Contact)
 
@@ -45,8 +41,4 @@ window.axios = require('axios');
 new Vue({
     el: '#app',
     render: h => h(App)
-});
-
-const appSeo = new Vue({
-    el: '#appSeo'
 });
