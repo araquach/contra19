@@ -1897,7 +1897,6 @@ module.exports = function isBuffer (obj) {
 //
 //
 //
-//
 
 /***/ }),
 
@@ -1996,7 +1995,6 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-//
 //
 //
 //
@@ -16906,9 +16904,7 @@ var staticRenderFns = [
       { staticClass: "bespoke hero is-medium", attrs: { id: "bespoke" } },
       [
         _c("div", { staticClass: "hero-body show columns" }, [
-          _c("div", { staticClass: "column" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "section column is-7" }, [
+          _c("div", { staticClass: "section column is-7 is-offset-5" }, [
             _c("h1", { staticClass: "title is-1 has-text-centered" }, [
               _vm._v("Bespoke Handcrafted Designs")
             ]),
@@ -17189,9 +17185,7 @@ var staticRenderFns = [
       { staticClass: "responsive hero is-medium", attrs: { id: "responsive" } },
       [
         _c("div", { staticClass: "hero-body columns" }, [
-          _c("div", { staticClass: "section column" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "section column is-7" }, [
+          _c("div", { staticClass: "section column is-7 is-offset-5" }, [
             _c("h1", { staticClass: "title is-1 has-text-centered" }, [
               _vm._v("Modern Responsive Design")
             ]),
@@ -33460,8 +33454,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/imac-work/GoSites/contra19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/contra19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/contra19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/contra19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

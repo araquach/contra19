@@ -20,6 +20,9 @@ $midbrown: rgb(75, 66, 58);
 @import "node_modules/bulma/bulma.sass";
 @import "~buefy/src/scss/buefy";
 
+body {
+  background-color: $primary;
+}
 
 .hero {
   margin-bottom: -4rem;
