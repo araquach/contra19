@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import Cookie from './components/Cookie'
 import Navbar from './components/layout/Navbar'
-import NavbarSeo from './components/layout/NavbarSeo'
 import Responsive from './components/Responsive'
-import Bespoke from "./components/Bespoke"
-import Database from "./components/Database"
-import Packages from "./components/Packages"
-import Social from "./components/Social"
+import Bespoke from './components/Bespoke'
+import Database from './components/Database'
+import Packages from './components/Packages'
+import Seo from './components/Seo'
+import Social from './components/Social'
 import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
@@ -26,12 +26,12 @@ window.axios = require('axios')
 Vue.use(Vuelidate)
 
 Vue.component('navbar-component', Navbar)
-Vue.component('navbar-seo-component', NavbarSeo)
 Vue.component('cookie-component', Cookie)
 Vue.component('responsive-component', Responsive)
 Vue.component('bespoke-component', Bespoke)
 Vue.component('database-component', Database)
 Vue.component('packages-component', Packages)
+Vue.component('seo-component', Seo)
 Vue.component('social-component', Social)
 Vue.component('contact-component', Contact)
 

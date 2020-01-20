@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="is-fixed-top is-spaced">
+    <b-navbar class="is-fixed-top">
         <template slot="brand">
             <b-navbar-item href="/">
                 <img src="/dist/img/contra-logo.svg" width="130" alt="Contra Design">

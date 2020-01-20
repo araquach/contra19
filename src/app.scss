@@ -44,6 +44,9 @@ body {
   @include until($tablet) {
     padding-top: 25rem;
     padding-bottom: 10rem;
+    .title.is-1 {
+      font-size: 2.5rem;
+    }
   }
 }
 

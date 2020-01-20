@@ -17830,6 +17830,10 @@ body {
     padding-top: 25rem;
     padding-bottom: 10rem;
   }
+
+  .hero-body .title.is-1 {
+    font-size: 2.5rem;
+  }
 }
 
 li {
