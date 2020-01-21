@@ -32656,8 +32656,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_11__["default"]);
+
+function scrollPosition() {
+  if (window.innerWidth > 900) {
+    return -200;
+  } else {
+    return -30;
+  }
+}
+
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MODULE_12___default.a, {
-  offset: -window.innerHeight * .2
+  offset: scrollPosition()
 });
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuelidate__WEBPACK_IMPORTED_MODULE_13___default.a);

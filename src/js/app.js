@@ -16,10 +16,17 @@ import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
 
-Vue.use(VueScrollTo, {
-     offset: -window.innerHeight * .2
-})
+function scrollPosition() {
+    if (window.innerWidth > 900) {
+        return -200
+    } else {
+        return -30
+    }
+}
 
+Vue.use(VueScrollTo, {
+     offset: scrollPosition()
+})
 
 window.axios = require('axios')
 
