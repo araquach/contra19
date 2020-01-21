@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="is-fixed-top">
+    <b-navbar fixed-top>
         <template slot="brand">
             <b-navbar-item href="/">
                 <img src="/dist/img/contra-logo.svg" width="130" alt="Contra Design">
@@ -28,7 +28,6 @@
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>
-
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
