@@ -1,49 +1,27 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
-import Cookie from './components/Cookie'
-import Navbar from './components/layout/Navbar'
-import NavbarSeo from './components/layout/NavbarSeo'
-import Responsive from './components/Responsive'
-import Bespoke from "./components/Bespoke"
-import Database from "./components/Database"
-import Packages from "./components/Packages"
-import Seo from "./components/Seo"
-import Social from "./components/Social"
-import Contact from './components/contact/Contact'
+import Vuelidate from 'vuelidate'
+import { routes } from './routes'
 
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
-import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
+Vue.use(VueRouter)
+Vue.use(Vuelidate)
 
-// Vue.use(VueScrollTo, {
-// //     offset: -window.innerHeight * .2
-// // })
+const router = new VueRouter({
+    routes
+})
 
 Vue.use(VueScrollTo)
 
-
 window.axios = require('axios')
-
-Vue.use(Vuelidate)
-
-Vue.component('navbar-component', Navbar)
-Vue.component('navbar-seo-component', NavbarSeo)
-Vue.component('cookie-component', Cookie)
-Vue.component('responsive-component', Responsive)
-Vue.component('bespoke-component', Bespoke)
-Vue.component('database-component', Database)
-Vue.component('packages-component', Packages)
-Vue.component('seo-component', Seo)
-Vue.component('social-component', Social)
-Vue.component('contact-component', Contact)
-
-window.axios = require('axios');
-// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 new Vue({
     el: '#app',
+    router,
     render: h => h(App)
 });
 
