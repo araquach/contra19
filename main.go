@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
+	"github.com/mailgun/mailgun-go/v3"
 	"html/template"
 	"log"
 	"net/http"
 	"os"
 	"time"
-	"github.com/mailgun/mailgun-go/v3"
 )
 
 var (
@@ -30,6 +30,37 @@ func init() {
 	if err := godotenv.Load(); err != nil {
 		log.Print("No .env file found")
 	}
+}
+
+func main() {
+	var err error
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+
+	tplHome = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/pages/index.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	r := mux.NewRouter()
+	r.HandleFunc("/", home).Methods("GET")
+	r.HandleFunc(`/{[a-zA-Z0-9=\-\/]+}`, home).Methods("GET")
+	// api
+	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
+
+	// Styles
+	assetHandler := http.FileServer(http.Dir("./dist/"))
+	assetHandler = http.StripPrefix("/dist/", assetHandler)
+	r.PathPrefix("/dist/").Handler(assetHandler)
+
+	log.Printf("Starting server on %s", port)
+
+	http.ListenAndServe(":" + port, r)
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
@@ -71,44 +102,4 @@ func apiSendMessage(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("ID: %s Resp: %s\n", id, resp)
 
 	return
-}
-
-func main() {
-
-	var err error
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-
-	tplHome = template.Must(template.ParseFiles(
-	"views/layouts/main.gohtml",
-	"views/pages/index.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	r := mux.NewRouter()
-	r.HandleFunc("/", home).Methods("GET")
-	// api
-	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
-
-	// Styles
-	assetHandler := http.FileServer(http.Dir("./dist/"))
-	assetHandler = http.StripPrefix("/dist/", assetHandler)
-	r.PathPrefix("/dist/").Handler(assetHandler)
-
-	// JS
-	jsHandler := http.FileServer(http.Dir("./dist/"))
-	jsHandler = http.StripPrefix("/dist/", jsHandler)
-	r.PathPrefix("/public/js/").Handler(jsHandler)
-
-	//Images
-	imageHandler := http.FileServer(http.Dir("./public/images/"))
-	r.PathPrefix("/images/").Handler(http.StripPrefix("/images/", imageHandler))
-
-	log.Printf("Starting server on %s", port)
-
-	http.ListenAndServe(":" + port, r)
 }

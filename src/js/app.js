@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 Vue.use(Vuelidate)
 
 const router = new VueRouter({
+    mode: 'history',
     routes
 })
 
@@ -23,8 +24,4 @@ new Vue({
     el: '#app',
     router,
     render: h => h(App)
-});
-
-const appSeo = new Vue({
-    el: '#appSeo'
 });
