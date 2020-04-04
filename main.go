@@ -75,7 +75,7 @@ func main() {
 
 	log.Printf("Starting server on %s", port)
 
-	http.ListenAndServeTLS(":" + port, "cert.pem", "key.pem", r)
+	http.ListenAndServe(":" + port, r)
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
