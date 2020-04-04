@@ -32,6 +32,18 @@ func init() {
 	}
 }
 
+func redirect(w http.ResponseWriter, req *http.Request) {
+	// remove/add not default ports from req.Host
+	target := "https://" + req.Host + req.URL.Path
+	if len(req.URL.RawQuery) > 0 {
+		target += "?" + req.URL.RawQuery
+	}
+	log.Printf("redirect to: %s", target)
+	http.Redirect(w, req, target,
+		// see comments below and consider the codes 308, 302, or 301
+		http.StatusTemporaryRedirect)
+}
+
 func main() {
 	var err error
 
@@ -47,6 +59,9 @@ func main() {
 		panic(err)
 	}
 
+	// redirect every http request to https
+	go http.ListenAndServe(":80", http.HandlerFunc(redirect))
+
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc(`/{[a-zA-Z0-9=\-\/]+}`, home).Methods("GET")
@@ -60,7 +75,7 @@ func main() {
 
 	log.Printf("Starting server on %s", port)
 
-	http.ListenAndServe(":" + port, r)
+	http.ListenAndServeTLS(":" + port, "cert.pem", "key.pem", r)
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
