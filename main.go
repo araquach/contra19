@@ -64,10 +64,6 @@ func main() {
 	log.Printf("Starting server on %s", port)
 
 	http.ListenAndServe(":" + port, r)
-
-	go http.ListenAndServe(":80", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "https://"+r.Host+r.URL.String(), http.StatusMovedPermanently)
-	}))
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
