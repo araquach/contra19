@@ -12,7 +12,6 @@ import (
 	"net/http"
 	"os"
 	"time"
-	heroku "gopkg.in/jonahgeorge/force-ssl-heroku.v1"
 )
 
 var (
@@ -31,6 +30,17 @@ func init() {
 	if err := godotenv.Load(); err != nil {
 		log.Print("No .env file found")
 	}
+}
+
+func forceSsl(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.Header.Get("x-forwarded-proto") != "https" {
+			sslUrl := "https://" + r.Host + r.RequestURI
+			http.Redirect(w, r, sslUrl, http.StatusTemporaryRedirect)
+			return
+		}
+		next.ServeHTTP(w, r)
+	})
 }
 
 func main() {
@@ -64,7 +74,7 @@ func main() {
 
 	log.Printf("Starting server on %s", port)
 
-	http.ListenAndServe(":" + port, heroku.ForceSsl(r))
+	http.ListenAndServe(":" + port, forceSsl(r))
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
