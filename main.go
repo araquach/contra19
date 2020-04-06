@@ -32,18 +32,6 @@ func init() {
 	}
 }
 
-//func redirect(w http.ResponseWriter, req *http.Request) {
-//	// remove/add not default ports from req.Host
-//	target := "https://" + req.Host + req.URL.Path
-//	if len(req.URL.RawQuery) > 0 {
-//		target += "?" + req.URL.RawQuery
-//	}
-//	log.Printf("redirect to: %s", target)
-//	http.Redirect(w, req, target,
-//		// see comments below and consider the codes 308, 302, or 301
-//		http.StatusTemporaryRedirect)
-//}
-
 func main() {
 	var err error
 
@@ -76,6 +64,10 @@ func main() {
 	log.Printf("Starting server on %s", port)
 
 	http.ListenAndServe(":" + port, r)
+
+	go http.ListenAndServe(":80", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "https://"+r.Host+r.URL.String(), http.StatusMovedPermanently)
+	}))
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
